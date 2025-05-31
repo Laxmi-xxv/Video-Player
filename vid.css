@@ -1,0 +1,135 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+video {
+    height: 400px;
+    width: 100%;
+  }
+  body {
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    background-image: linear-gradient(
+      to right,
+      black,
+      rgba(29, 28, 28, 0.907),
+      black
+    );
+    /* ........background-image: linear-gradient(to right bottom, hotpink, white, hotpink); */
+
+    /* .........background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e); */
+  }
+
+
+  body > main {
+    height: 620px;
+    width: 500px;
+    border: 1px solid black;
+    box-shadow: 0 0 40px rgb(253, 58, 123);
+    margin: 0 auto;
+    margin-top: 2rem;
+    text-align: center;
+    /* background-image: linear-gradient( to right,black, gray, black); */
+    background-image: linear-gradient( #0f0c29, #1c1754, #5f5fa6);
+    padding: 10px 10px;
+    border-radius: 10px;
+  }
+
+  body > main:hover {
+    cursor: pointer;
+
+      /* background-image: linear-gradient(
+        45deg,
+        yellow,
+        orange,
+        lightgreen,
+        cyan,
+        pink,
+        purple,
+        violet,
+        red,
+        blue
+      ); */
+    /*.... box-shadow: 0 0 10px red; */
+    z-index: -1;
+    animation: animate 2s linear infinite;
+    /* ..........background-image: radial-gradient(red, green, blue); */
+  } 
+
+  @keyframes animate {
+    0% {
+      box-shadow: 0 0 40px PINK;
+    }
+    50% { 
+      box-shadow: 0 0 60px rgb(255, 74, 104);
+       /* rotate: 180deg; */
+    }
+    100% {
+      box-shadow: 0 0 40px rgb(232, 87, 87);
+      /*.......... rotate: 360deg; */
+    }
+  }
+
+  main::after {
+    filter: blur(40px); 
+   }
+   /* body > main:hover {
+      rotate: 180deg
+    } */
+  /*......... body > main:hover {
+      cursor: pointer;
+    } */
+  body > main > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 30px;
+    width: 100%;
+    background-image: linear-gradient(white, gray, white);
+    border-radius: 15px;
+  }
+  /*.......... h5 {
+      margin-bottom: 0.5rem;
+    } */
+  input {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+  video {
+    
+    border: 2px solid rgb(212, 195, 195);
+   } 
+
+  /*........ #length {
+    position: relative;
+    bottom: 70px;
+  } */
+  
+  .pp {
+    display: none;
+  }
+  
+  .fa-solid {
+    cursor: pointer;
+    font-size: 20px;
+  }
+
+  /*.......... audio {
+      display: none;
+    } */
+  /*......... .PP {
+      display: none;
+    } */
+
+  #slider {
+    width: 40%;
+    /*.... margin-top: 0.5rem; */
+   }
+   
+  #length{
+    position: relative;
+    bottom: 85px;
+  } 

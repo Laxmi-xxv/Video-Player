@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video player</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="vid.css" />
+  </head>
+  <body>
+    <main>
+      <!-- <img src="" alt="" /> -->
+
+      <video controls src="./vid.mp4"></video>
+      <marquee behavior="scroll" direction="right"
+        ><h5 style="font-size: larger; color: white">Video Name</h5></marquee
+      >
+      <!-- <audio controls src=""></audio> -->
+      <input id="length" type="range" />
+      <div>
+        <i class="fa-solid fa-backward"></i>
+        <i class="fa-solid fa-play"></i>
+        <i class="fa-solid fa-pause pp"></i>
+        <i class="fa-solid fa-forward"></i>
+        <i class="fa-solid fa-shuffle"></i>
+      </div>
+      <label for="volume"> Volume</label>
+      <input type="range" id="slider" min="0" max="100" />
+      <span class="display_vlm">50</span>
+      <!-- <p>Value: <output id="value"></output></p> -->
+      <p id="value"></p>
+    </main>
+    <script src="./vid.js"></script>
+  </body>
+</html>
